@@ -6,6 +6,9 @@ E(r,c) = Encoding Matrix consisting of elements only from F with row r and colum
 x = input data
 y = bytes stored on disk
 
+r/c = stretch factor i.e. how many bytes for every users byte will be stored
+r-c = durability i.e. how many disks you can afford to lose while still being able to recover users data
+
 E is a special type of matrix with below properties:
 * All square-sub-matrices of E should be invertible e.g. E(5,3) will have 10 (5 choose 3) square sub-matrices and all of them need to be invertible. 
 * It contains elements from finite fields which helps reducing the size of y
