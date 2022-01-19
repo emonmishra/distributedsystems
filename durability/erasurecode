@@ -4,3 +4,11 @@ Essentially there are three pieces to this technology:
 E = Encoding Matrix
 x = user's data
 y = bytes stored on disk
+
+derive y using below equation:
+E.x = y
+
+then store y on disk.
+
+to get back x, use below equation:
+(Ei).y = x; where Ei is inverse matrix of E
