@@ -1,6 +1,6 @@
 Start here : https://en.wikipedia.org/wiki/Erasure_code
 
-Essentially there are three pieces to this technology:
+Essentially there are below pieces to this technology:
 F = Set of elements in a Finite field (https://en.wikipedia.org/wiki/Finite_field)
 E(r,c) = Encoding Matrix consisting of elements only from F with row r and column c
 x = input data
