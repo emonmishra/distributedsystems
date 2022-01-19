@@ -13,10 +13,11 @@ E is a special type of matrix with below properties:
 derive y using below equation:
 E.x = y
 
-then store y on disk by distributing each row of y on separate machines (S1...Sn) and maintain that mapping M somewhere because corresponding row from E will be used to recover x
+then store y on disk by distributing each row of y on separate r (row of E) machines (S1...Sr) and maintain that mapping M somewhere because
+corresponding row from E will be used to recover x
 
 to get back x:
-* read from subset of machines  where y was stored
+* read from subset of machines c (columns of E) from (S1..Sr) where y was stored
 * get sub-matrix Es of E corresponding such that machines Sk from where y was read represents row k in E
 * invert Es
 * the recover x using (Esi).y = x; where Esi is inverse matrix of Es
