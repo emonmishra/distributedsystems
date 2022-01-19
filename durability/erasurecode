@@ -2,7 +2,7 @@ Start here : https://en.wikipedia.org/wiki/Erasure_code
 
 Essentially there are three pieces to this technology:
 F = Set of elements in a Finite field (https://en.wikipedia.org/wiki/Finite_field)
-E = Encoding Matrix consisting of elements only from F
+E(r,c) = Encoding Matrix consisting of elements only from F with row r and column c
 x = input data
 y = bytes stored on disk
 
@@ -16,7 +16,7 @@ E.x = y
 then store y on disk by distributing each row of y on separate machines (S1...Sn) and maintain that mapping M somewhere because corresponding row from E will be used to recover x
 
 to get back x:
-* read from subset of machines where y was stored
+* read from subset of machines  where y was stored
 * get sub-matrix Es of E corresponding such that machines Sk from where y was read represents row k in E
 * invert Es
 * the recover x using (Esi).y = x; where Esi is inverse matrix of Es
