@@ -1,0 +1,6 @@
+Start here : https://en.wikipedia.org/wiki/Erasure_code
+
+Essentially there are three pieces to this technology:
+E = Encoding Matrix
+x = user's data
+y = bytes stored on disk
