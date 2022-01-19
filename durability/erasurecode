@@ -17,7 +17,7 @@ then store y on disk by distributing each row of y on separate r (row of E) mach
 corresponding row from E will be used to recover x
 
 to get back x:
-* read from subset of machines c (columns of E) from (S1..Sr) where y was stored
+* read from subset of machines r/c (c = columns of E, r=rows in E) from (S1..Sr) where y was stored
 * get sub-matrix Es of E corresponding such that machines Sk from where y was read represents row k in E
 * invert Es
 * the recover x using (Esi).y = x; where Esi is inverse matrix of Es
